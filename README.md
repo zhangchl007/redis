@@ -30,6 +30,12 @@ That's it
 make build-redis-image
 ```
 
+#### Openshift Redis Docker Image
+
+```
+docker build -t quay.gps.gsslab.pek2.redhat.com/opstree/redis:v6.0.9 . -f Dockerfile.openshift
+```
+
 #### Redis Exporter Docker Image
 
 ```shell
