@@ -22,7 +22,7 @@ RUN  apk add --no-cache su-exec tzdata make curl build-base linux-headers bash &
     rm -rf /tmp/redis-${REDIS_VERSION}* && \
     apk del curl make
 COPY redis.conf /etc/redis/
-COPY entrypoint.sh /usr/bin/entrypoint.sh
+COPY ocp-entrypoint.sh /usr/bin/entrypoint.sh
 COPY setupMasterSlave.sh /usr/bin/setupMasterSlave.sh
 COPY healthcheck.sh /usr/bin/healthcheck.sh
 
